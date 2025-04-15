@@ -6,26 +6,79 @@
     <title>Motivational Message for Bibek</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: #fff;
             text-align: center;
             padding: 50px;
+            animation: fadeIn 3s ease-in-out;
         }
+
         h1 {
-            color: #2e8b57;
+            color: #ffdd57;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: bounceIn 1s ease-in-out;
         }
+
         p {
             font-size: 20px;
-            color: #333;
+            line-height: 1.6;
+            margin: 15px 0;
+            animation: slideIn 1.5s ease-out;
         }
+
         .quote {
             font-style: italic;
             font-size: 24px;
-            color: #555;
+            color: #dcdcdc;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
+
         .footer {
-            margin-top: 50px;
-            color: #2e8b57;
+            margin-top: 30px;
+            color: #ffdd57;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-50%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Responsive Text */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .quote {
+                font-size: 20px;
+            }
+        }
+
+        /* Nepali font for the page */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
         }
     </style>
 </head>
@@ -34,8 +87,20 @@
     <p>Sometimes life throws challenges your way, but remember that every obstacle is a stepping stone to greater things.</p>
     <p class="quote">"When you have a firm determination, nothing can stop you. Trust the process." - Bhagavad Gita</p>
     <p class="quote">"The best way to predict the future is to create it." - Abraham Lincoln</p>
+    
+    <p class="quote">"Don't stress, trust in God, time will come. Stay strong, I am with you, my friend!"</p>
+    
     <div class="footer">
-        <p>Stay strong, stay positive. Your journey is just beginning!</p>
+        <p>Your journey is just beginning!</p>
     </div>
+
+    <script>
+        // Simple JavaScript for dynamic effects like a fade-in effect
+        window.onload = function() {
+            setTimeout(function() {
+                alert("Remember: Understand the importance of time and moments, stay strong!");
+            }, 3000);
+        }
+    </script>
 </body>
 </html>
